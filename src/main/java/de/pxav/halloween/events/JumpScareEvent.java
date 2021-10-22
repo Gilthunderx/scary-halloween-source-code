@@ -42,7 +42,7 @@ public class JumpScareEvent implements IEvent {
                 if(countDown == 10) {
                     Bukkit.getOnlinePlayers().forEach(current -> {
                         if(instance.getSettingsHandler().getAffectedWorlds().contains(current.getWorld().getName()))
-                            current.playSound(current.getLocation(), Sound.ENDERMAN_IDLE, 3, 1);
+                            current.playSound(current.getLocation(), Sound.ENDERMAN_AMBIENT, 3, 1);
                     });
                 }
 
